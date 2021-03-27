@@ -8,9 +8,15 @@ import { SidebarComponent } from "./sidebar/sidebar.component";
 import { AppRoutingModule } from "./app.routing.module";
 import { Demo1Component } from "./features/demo1/demo1.component";
 import { Demo2Component } from "./features/demo2/demo2.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
+  ],
   declarations: [
     AppComponent,
     HelloComponent,

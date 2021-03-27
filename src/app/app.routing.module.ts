@@ -6,11 +6,13 @@ import { Demo2Component } from "./features/demo2/demo2.component";
 const routes: Routes = [
   {
     path: "demo1",
-    component: Demo1Component
+    component: Demo1Component,
+    data: { animation: "HomePage" }
   },
   {
     path: "demo2",
-    component: Demo2Component
+    component: Demo2Component,
+    data: { animation: "AboutPage" }
   }
 ];
 
