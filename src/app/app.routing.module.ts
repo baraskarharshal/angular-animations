@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
+import { ButtonAnimationsComponent } from "./features/button-animations/button-animations.component";
 import { Demo1Component } from "./features/routeAnimationSlideIn/demo1/demo1.component";
 import { Demo2Component } from "./features/routeAnimationSlideIn/demo2/demo2.component";
 import { StateChangeComponent } from "./features/state-change/state-change.component";
@@ -17,8 +18,11 @@ const routes: Routes = [
   },
   {
     path: "basicStateChangeAnimation",
-    component: StateChangeComponent,
-    data: { animation: "AboutPage" }
+    component: StateChangeComponent
+  },
+  {
+    path: "buttonAnimations",
+    component: ButtonAnimationsComponent
   }
 ];
 

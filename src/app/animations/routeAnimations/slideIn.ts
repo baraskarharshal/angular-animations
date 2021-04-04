@@ -8,6 +8,9 @@ import {
   trigger
 } from "@angular/animations";
 
+// :enter is an alias for void => *
+// :leave is an alias for * => void
+
 export const slideInAnimation = trigger("routeAnimations", [
   // transition defined for two way
   transition("HomePage <=> AboutPage", [

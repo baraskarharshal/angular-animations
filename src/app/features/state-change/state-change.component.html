@@ -7,7 +7,7 @@
         [@openClose]="isOpen ? 'open' : 'closed'"
         class="open-close-container"
       >
-        <button (click)="isOpen=!isOpen">
+        <button class="btn btn-primary" (click)="isOpen=!isOpen">
           {{ isOpen ? 'Open' : 'Closed' }}
         </button>
       </div>
@@ -18,7 +18,16 @@
     <p class="m-2">Key Points</p>
     <ul>
       <li class="text-primary mb-1">
-        Basic State Change Component
+        Wild card state: * represents any state including void state. When there
+        are more than 2 states and we want to define same animation transition
+        among all of those states then use *. Eg * <=> * means any-to-any state
+        transition.
+      </li>
+      <li class="text-primary mb-1">
+        Void state: use the void state to configure transitions for an element
+        that is entering or leaving a page.
+        <br />Eg. * => void OR :leave (Element is leaving) <br />Eg. void => *
+        OR :enter (Element is entering regardless of its previous state).
       </li>
     </ul>
   </div>
