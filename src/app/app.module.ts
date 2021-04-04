@@ -6,9 +6,9 @@ import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
 import { SidebarComponent } from "./sidebar/sidebar.component";
 import { AppRoutingModule } from "./app.routing.module";
-import { Demo1Component } from "./features/demo1/demo1.component";
-import { Demo2Component } from "./features/demo2/demo2.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { Demo1Component } from "./features/routeAnimationSlideIn/demo1/demo1.component";
+import { Demo2Component } from "./features/routeAnimationSlideIn/demo2/demo2.component";
 
 @NgModule({
   imports: [

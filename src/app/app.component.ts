@@ -1,6 +1,6 @@
 import { Component, VERSION } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
-import { slideInAnimation } from "./animations";
+import { slideInAnimation } from "./animations/routeAnimations/slideIn";
 
 @Component({
   selector: "my-app",
